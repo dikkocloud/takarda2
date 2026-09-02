@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Blog — Takarda</title>
+<meta name="description" content="Notes from the Takarda desk: essays on Northern Nigerian literature, meet-up recaps, and updates from the Eco-Reading Project." />
+
+<meta property="og:title" content="Blog — Takarda" />
+<meta property="og:description" content="Essays, recaps and reading lists from the Takarda book club." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="/assets/logo-1200.png" />
+
+<link rel="icon" type="image/png" href="/assets/favicon.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          violet: { DEFAULT: '#6C4CF1', dark: '#5636C9' },
+          coral: '#FF5D8F',
+          lime: '#D6FF3F',
+          sky: { DEFAULT: '#22C7B5', dark: '#189485' },
+          cream: '#FFFFFF',
+          parchment: '#F4F1FF',
+          ink: '#161221',
+        },
+        fontFamily: {
+          display: ['Lora', 'ui-serif', 'Georgia', 'serif'],
+          sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          mark: ['Caveat', 'cursive'],
+        },
+      },
+    },
+  };
+</script>
+<link rel="stylesheet" href="/css/custom.css" />
+</head>
+<body class="font-sans text-ink bg-cream antialiased">
+
+<a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:top-3 focus:left-3 focus:bg-ink focus:text-cream focus:px-4 focus:py-2 focus:rounded">Skip to content</a>
+
+<!-- ========================= NAV ========================= -->
+<header class="sticky top-0 z-40 bg-cream/95 backdrop-blur border-b border-ink/10">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 flex items-center justify-between h-20">
+    <a href="/index.html" class="flex items-center gap-3">
+      <img src="/assets/logo-300.png" alt="Takarda" class="h-11 w-auto" />
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-[15px] font-medium">
+      <a href="/index.html" class="nav-link">Home</a>
+      <a href="/index.html#about" class="nav-link">About</a>
+      <a href="/blog.html" aria-current="page" class="nav-link">Blog</a>
+      <a href="/index.html#community" class="nav-link">Community</a>
+      <a href="/donate.html" class="nav-link">Eco-Reading Project</a>
+    </nav>
+    <div class="hidden md:flex items-center gap-3">
+      <!-- Replace WHATSAPP_URL below (also in footer) with your real WhatsApp invite link -->
+      <a href="https://chat.whatsapp.com/REPLACE_WITH_YOUR_INVITE_CODE" target="_blank" rel="noopener noreferrer" class="btn btn-outline text-sm py-2.5 px-5">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.6-1.28 1.18-1.77 1.24-.45.06-.98.24-3.3-.7-2.78-1.14-4.58-3.98-4.72-4.17-.14-.19-1.13-1.5-1.13-2.86 0-1.36.72-2.02.97-2.3.25-.27.55-.34.73-.34.18 0 .37 0 .53.01.17.01.4-.06.62.48.22.55.76 1.9.83 2.04.07.14.11.3.02.49-.09.19-.14.3-.28.46-.14.16-.29.36-.42.48-.14.13-.28.28-.12.55.16.27.71 1.19 1.53 1.93 1.05.95 1.94 1.25 2.2 1.4.27.14.43.12.6-.07.16-.19.68-.79.86-1.06.18-.27.36-.22.6-.13.24.09 1.55.74 1.81.87.27.14.44.2.5.31.06.12.06.68-.16 1.28z"/></svg>
+        Join our community
+      </a>
+      <a href="/donate.html" class="btn btn-violet text-sm py-2.5 px-5">Donate</a>
+    </div>
+    <button id="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden inline-flex flex-col justify-center gap-1.5 w-11 h-11 -mr-1" aria-label="Toggle menu">
+      <span class="block h-0.5 w-6 bg-ink"></span>
+      <span class="block h-0.5 w-6 bg-ink"></span>
+      <span class="block h-0.5 w-6 bg-ink"></span>
+    </button>
+  </div>
+  <div id="mobile-menu" data-open="false" class="md:hidden border-t border-ink/10">
+    <nav class="max-w-6xl mx-auto px-5 py-4 flex flex-col gap-4 text-base font-medium">
+      <a href="/index.html">Home</a>
+      <a href="/index.html#about">About</a>
+      <a href="/blog.html">Blog</a>
+      <a href="/index.html#community">Community</a>
+      <a href="/donate.html">Eco-Reading Project</a>
+      <a href="/donate.html" class="btn btn-violet w-full mt-1">Donate</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ========================= HEADER ========================= -->
+  <section class="bg-parchment deckle-bottom pt-16 pb-24 sm:pt-24 sm:pb-32">
+    <div class="max-w-4xl mx-auto px-5 sm:px-8 text-center">
+      <span class="badge-sticker bg-coral text-cream mb-6 reveal">from the takarda desk</span>
+      <h1 class="reveal font-display text-4xl sm:text-5xl leading-tight">Essays, recaps, and the odd reading list</h1>
+      <p class="reveal mt-5 text-ink-70 text-lg max-w-2xl mx-auto">Notes on what we're reading, what we found in the archive, and how the Eco-Reading Project is growing — filed under Past, Present, or Future.</p>
+    </div>
+  </section>
+
+  <!-- ========================= FILTERS ========================= -->
+  <section class="max-w-6xl mx-auto px-5 sm:px-8 -mt-10 relative z-10">
+    <div class="flex flex-wrap gap-3 reveal">
+      <button class="chip" data-filter="all" aria-pressed="true">All posts</button>
+      <button class="chip" data-filter="past" aria-pressed="false">Past</button>
+      <button class="chip" data-filter="present" aria-pressed="false">Present</button>
+      <button class="chip" data-filter="future" aria-pressed="false">Future</button>
+    </div>
+  </section>
+
+  <!-- ========================= POST GRID ========================= -->
+  <section class="max-w-6xl mx-auto px-5 sm:px-8 py-14 sm:py-20">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <article data-category="past" class="reveal group">
+        <a href="#" class="block">
+          <div class="overflow-hidden rounded-lg aspect-[4/3]">
+            <img src="https://images.unsplash.com/photo-1513185041617-8ab03f83d6c5?auto=format&fit=crop&w=900&q=70" alt="Close-up of brown, well-worn book pages" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <p class="mt-4 text-xs font-semibold uppercase tracking-wide text-violet">Past</p>
+          <h2 class="font-display text-xl mt-1.5 leading-snug">What the Ajami manuscripts still have to teach us</h2>
+          <p class="mt-2 text-ink-70 text-[15px]">Before Boko script, Hausa was written in Ajami — Arabic letters bent to a new language. Here's what we found reading it with elders in the club.</p>
+          <p class="mt-3 text-sm text-ink-45">12 min read · February 2026</p>
+        </a>
+      </article>
+
+      <article data-category="present" class="reveal group">
+        <a href="#" class="block">
+          <div class="overflow-hidden rounded-lg aspect-[4/3]">
+            <img src="https://images.unsplash.com/photo-1610116306796-6fea9f4fae38?auto=format&fit=crop&w=900&q=70" alt="A pile of open paperback books" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <p class="mt-4 text-xs font-semibold uppercase tracking-wide text-coral">Present</p>
+          <h2 class="font-display text-xl mt-1.5 leading-snug">February's pick: a recap of a very split room</h2>
+          <p class="mt-2 text-ink-70 text-[15px]">Nobody agreed on the ending. That's usually a sign it was worth the argument — here's how the discussion actually went.</p>
+          <p class="mt-3 text-sm text-ink-45">6 min read · February 2026</p>
+        </a>
+      </article>
+
+      <article data-category="future" class="reveal group">
+        <a href="#" class="block">
+          <div class="overflow-hidden rounded-lg aspect-[4/3]">
+            <img src="https://images.unsplash.com/photo-1734255620882-77378ba420bb?auto=format&fit=crop&w=900&q=70" alt="A vendor pushing a loaded wheelbarrow through a market" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <p class="mt-4 text-xs font-semibold uppercase tracking-wide text-sky">Future</p>
+          <h2 class="font-display text-xl mt-1.5 leading-snug">Our second reading corner is open</h2>
+          <p class="mt-2 text-ink-70 text-[15px]">Forty donated books, a repaired bench, and eleven seedlings in the ground. Here's what it took to get the second corner built.</p>
+          <p class="mt-3 text-sm text-ink-45">5 min read · January 2026</p>
+        </a>
+      </article>
+
+      <article data-category="present" class="reveal group">
+        <a href="#" class="block">
+          <div class="overflow-hidden rounded-lg aspect-[4/3]">
+            <img src="https://images.unsplash.com/photo-1694730750153-8b66cf3dd014?auto=format&fit=crop&w=900&q=70" alt="A pile of open books on a table" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <p class="mt-4 text-xs font-semibold uppercase tracking-wide text-coral">Present</p>
+          <h2 class="font-display text-xl mt-1.5 leading-snug">How we pick the monthly book, honestly</h2>
+          <p class="mt-2 text-ink-70 text-[15px]">Three nominations, one very unofficial vote, and a rule against picking anything over 500 pages in Ramadan.</p>
+          <p class="mt-3 text-sm text-ink-45">4 min read · January 2026</p>
+        </a>
+      </article>
+
+      <article data-category="past" class="reveal group">
+        <a href="#" class="block">
+          <div class="overflow-hidden rounded-lg aspect-[4/3]">
+            <img src="https://images.unsplash.com/photo-1585540083814-ea6ee8af9e4f?auto=format&fit=crop&w=900&q=70" alt="A trader at a Northern Nigerian market stall" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <p class="mt-4 text-xs font-semibold uppercase tracking-wide text-violet">Past</p>
+          <h2 class="font-display text-xl mt-1.5 leading-snug">Kurmi Market, oral history, and the deal we struck</h2>
+          <p class="mt-2 text-ink-70 text-[15px]">A conversation with three traders whose families have worked one of West Africa's oldest markets for four generations.</p>
+          <p class="mt-3 text-sm text-ink-45">9 min read · December 2025</p>
+        </a>
+      </article>
+
+      <article data-category="future" class="reveal group">
+        <a href="#" class="block">
+          <div class="overflow-hidden rounded-lg aspect-[4/3]">
+            <img src="https://images.unsplash.com/photo-1765584830351-b751c8937c75?auto=format&fit=crop&w=900&q=70" alt="Two women at a food stall" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <p class="mt-4 text-xs font-semibold uppercase tracking-wide text-sky">Future</p>
+          <h2 class="font-display text-xl mt-1.5 leading-snug">Why we plant a tree for every reading corner</h2>
+          <p class="mt-2 text-ink-70 text-[15px]">Takarda means paper, and paper starts as a tree. The maths behind our one-for-one planting commitment.</p>
+          <p class="mt-3 text-sm text-ink-45">7 min read · December 2025</p>
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ========================= NEWSLETTER CTA ========================= -->
+  <section class="bg-sky py-16 sm:py-20">
+    <div class="max-w-2xl mx-auto px-5 sm:px-8 text-center">
+      <h2 class="reveal font-display text-2xl sm:text-3xl text-cream">New posts, straight to your inbox</h2>
+      <p class="reveal mt-3 text-cream/85">One email a month. Reading list, meet-up date, nothing else.</p>
+      <form class="reveal mt-7 flex flex-col sm:flex-row gap-3 justify-center" action="#" method="post">
+        <label for="blog-email" class="sr-only">Email address</label>
+        <input id="blog-email" type="email" required placeholder="you@example.com" class="w-full sm:w-80 rounded-md px-4 py-3.5 text-ink placeholder:text-ink/50 border-0 focus:ring-2 focus:ring-lime" />
+        <button type="submit" class="btn btn-cream whitespace-nowrap">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ========================= FOOTER ========================= -->
+<footer class="bg-ink text-cream/80">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div class="lg:col-span-2">
+      <img src="/assets/logo-300.png" alt="Takarda" class="h-10 w-auto mb-5" />
+      <p class="max-w-xs text-[15px]">A book club connecting Northern Nigeria's past, present and future — one shared page at a time.</p>
+    </div>
+    <div>
+      <h3 class="font-display text-cream text-lg mb-4">Explore</h3>
+      <ul class="space-y-2.5 text-[15px]">
+        <li><a href="/index.html" class="hover:text-cream">Home</a></li>
+        <li><a href="/index.html#about" class="hover:text-cream">About</a></li>
+        <li><a href="/blog.html" class="hover:text-cream">Blog</a></li>
+        <li><a href="https://chat.whatsapp.com/REPLACE_WITH_YOUR_INVITE_CODE" target="_blank" rel="noopener noreferrer" class="hover:text-cream">Join our community</a></li>
+        <li><a href="/donate.html" class="hover:text-cream">Eco-Reading Project</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-display text-cream text-lg mb-4">Say hello</h3>
+      <ul class="space-y-2.5 text-[15px]">
+        <li><a href="mailto:hello@takarda.club" class="hover:text-cream">hello@takarda.club</a></li>
+        <li>Kano, Nigeria</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-cream/10">
+    <p class="max-w-6xl mx-auto px-5 sm:px-8 py-6 text-xs text-cream/50">© <span data-year>2026</span> Takarda Book Club. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>
